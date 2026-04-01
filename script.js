@@ -11,7 +11,7 @@ async function fetchMovies() {
 
     moviesDiv.innerHTML = data.Search.map(movie => `
         <div class="card">
-            <img src="${movie.Poster}">
+            <img src="${movie.Poster}" alt="${movie.Title}">
             <h3>${movie.Title}</h3>
             <p>${movie.Year}</p>
         </div>
