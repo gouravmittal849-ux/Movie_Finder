@@ -4,7 +4,7 @@ const loading = document.getElementById("loading");
 async function fetchMovies() {
     loading.style.display = "block";
 
-    const res = await fetch("https://www.omdbapi.com/?apikey=564727fa&s=batman");
+    const res = await fetch("https://www.omdbapi.com/?apikey=93b43aed&s=batman");
     const data = await res.json();
 
     loading.style.display = "none";
