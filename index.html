@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,32 @@
 </head>
 
 <body>
-<div class="container">
-<h1>🎬 Movie Finder</h1>
 
-<div id="loading" role="status">Loading movies...</div>
-<div id="movies"></div>
+<div class="container">
+    <h1>🎬 Movie Finder</h1>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search movies...">
+
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+        </select>
+
+        <select id="sort">
+            <option value="default">Sort</option>
+            <option value="asc">Year ↑</option>
+            <option value="desc">Year ↓</option>
+        </select>
+    </div>
+
+    <div id="loading">Loading...</div>
+
+    <div id="movies"></div>
 </div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
